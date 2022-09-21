@@ -6,14 +6,19 @@
 .about-container{
     width: 100vw;
     height: 200vh;
-   
+   position: relative;
     padding:  0 1rem;
     color: antiquewhite;
 }
 .about-container main{
      line-height: 2rem;
 }
-
+.about-container footer{
+    position: absolute;
+    width: 100%;
+   left: 0;
+   bottom: 0;
+}
 .aboutus {
     font-family:'Times New Roman', Times, serif;
     margin: 1em;
