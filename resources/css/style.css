@@ -274,6 +274,7 @@ footer{
 
 .copyright p{
     color: aliceblue;
+    font-size: .3em;
 }
 
 @media screen and (max-width:600px){
