@@ -9,6 +9,9 @@
     box-sizing: border-box;
     overflow-x: hidden;
  }
+ body{
+    height: 100vh;
+ }
 
 .about-container{
     width: 100vw;
@@ -18,14 +21,25 @@
 }
 .about-container .main{
      line-height: 2rem;
+     
 }
 .about-container footer{
-    position: absolute;
+     position: absolute;
     width: 100%;
-   left: 0;
-   bottom: 0;
 }
 
+@media screen and (max-width:1240px){
+    body{
+        position: relative;
+
+    }
+    .about-container footer{
+   
+        width: 100%;
+        position: absolute;
+        top: 150%;
+    }
+}
 .about-title{
     font-family:'Times New Roman', Times, serif;
     margin: 1em;
@@ -33,7 +47,7 @@
     font-size: 2.3em;
 }
 
-.aboutus {
+.aboutus { 
     font-family:'Times New Roman', Times, serif;
     margin: 1em;
     color: blueviolet;
@@ -317,5 +331,8 @@ footer{
     width: 100vw;
     height: 190vh;
     color: antiquewhite;
+}
+body{
+    position: relative;
 }
   }
