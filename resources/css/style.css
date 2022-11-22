@@ -7,16 +7,16 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    overflow-x: hidden;
  }
 
 .about-container{
     width: 100vw;
-    height: 200vh;
-   position: relative;
-    padding:  0 1rem;
+    height: 120vh;
+    /* padding:  0 1rem; */
     color: antiquewhite;
 }
-.about-container main{
+.about-container .main{
      line-height: 2rem;
 }
 .about-container footer{
@@ -25,13 +25,22 @@
    left: 0;
    bottom: 0;
 }
+
+.about-title{
+    font-family:'Times New Roman', Times, serif;
+    margin: 1em;
+    color: blueviolet;
+    font-size: 2.9em;
+}
+
 .aboutus {
     font-family:'Times New Roman', Times, serif;
     margin: 1em;
     color: blueviolet;
+    font-size: 1.5em;
 }
 
-.container  main p{
+.container  .main p{
     padding: 3rem;
     line-height: 2rem;
 }
@@ -62,11 +71,10 @@
  header{
     display: flex;
     align-items: center;
-    margin: 0 auto;
     background-color: rgb(226, 225, 225);
-    width: 100%;
+    width: 100vw;
     height: 60px;
-    max-width: 1200px;
+    justify-content: center;
  }
 
 .logo{
@@ -107,8 +115,8 @@ nav ul li a{
     padding: 10px;
 }
 
-main{
-    max-width: 1200px;
+.main{
+    /* max-width: 1200px; */
    margin: 0 auto;
 }
 
@@ -238,16 +246,22 @@ color: white;
 
 
 footer{
-    max-width: 1200px;
     height: 50px;
     background-color: blueviolet;
-   bottom: 0;
    width:100%;
-   display: flex;
+   display: grid;
+   place-content: center;
+   top: 100%;
+
+   /* display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: center; */
    
 
+}
+
+.about-container{
+    position: relative;
 }
 
 .footer-container{
@@ -292,13 +306,16 @@ footer{
     background: rgb(11, 161, 255);
   }
 
-  @media (max-width:480px){
+
+  .container{
+    padding: 0 1.4em;
+  }
+  @media (max-width:1240px){
 
  .about-container{
     width: 100vw;
-    height: 240vh;
+    height: 190vh;
    position: relative;
-    padding:  0 1rem;
     color: antiquewhite;
 }
   }
