@@ -165,6 +165,7 @@ height: 100px;
 
 .change-country{
     cursor: pointer;
+    transform: none;
 }
 
 .title{
